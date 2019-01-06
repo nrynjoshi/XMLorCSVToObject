@@ -1,4 +1,4 @@
-package com.demo.induction.tp;
+package com.demo.induction.tp.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import java.math.BigDecimal;

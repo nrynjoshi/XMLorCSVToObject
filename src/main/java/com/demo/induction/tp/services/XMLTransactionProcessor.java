@@ -1,13 +1,19 @@
-package com.demo.induction.tp;
+package com.demo.induction.tp.services;
+
+import com.demo.induction.tp.model.Transaction;
+import com.demo.induction.tp.model.TransactionList;
+import com.demo.induction.tp.model.Violation;
+import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import java.io.InputStream;
 import java.util.List;
 
-import static com.demo.induction.tp.TransactionUtil.isBalancedProcess;
-import static com.demo.induction.tp.TransactionUtil.validationProcess;
+import static com.demo.induction.tp.utils.TransactionUtil.isBalancedProcess;
+import static com.demo.induction.tp.utils.TransactionUtil.validationProcess;
 
+@Service
 public class XMLTransactionProcessor implements TransactionProcessor {
 
     private static List<Transaction> transactionList;

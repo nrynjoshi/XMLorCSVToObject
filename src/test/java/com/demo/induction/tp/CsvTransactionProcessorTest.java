@@ -1,7 +1,13 @@
 package com.demo.induction.tp;
 
+import com.demo.induction.tp.model.Transaction;
+import com.demo.induction.tp.model.Violation;
+import com.demo.induction.tp.services.CSVTransactionProcessor;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.FileInputStream;
 import java.math.BigDecimal;
@@ -10,6 +16,8 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.hasItem;
 import static org.junit.Assert.*;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = TransactionProcessorApplication.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class CsvTransactionProcessorTest {
 
     private CSVTransactionProcessor transactionProcessor;

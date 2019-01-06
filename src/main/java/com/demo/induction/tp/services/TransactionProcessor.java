@@ -1,4 +1,7 @@
-package com.demo.induction.tp;
+package com.demo.induction.tp.services;
+
+import com.demo.induction.tp.model.Violation;
+import com.demo.induction.tp.model.Transaction;
 
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;

@@ -1,4 +1,8 @@
-package com.demo.induction.tp;
+package com.demo.induction.tp.services;
+
+import com.demo.induction.tp.model.Transaction;
+import com.demo.induction.tp.model.Violation;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -9,10 +13,10 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import static com.demo.induction.tp.TransactionUtil.isBalancedProcess;
-import static com.demo.induction.tp.TransactionUtil.validationProcess;
+import static com.demo.induction.tp.utils.TransactionUtil.isBalancedProcess;
+import static com.demo.induction.tp.utils.TransactionUtil.validationProcess;
 
-
+@Service
 public class CSVTransactionProcessor implements TransactionProcessor {
 
     private static List<Transaction> transactionList;

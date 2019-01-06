@@ -1,4 +1,4 @@
-package com.demo.induction.tp;
+package com.demo.induction.tp.model;
 
 public class Violation {
     private int order;
@@ -9,6 +9,9 @@ public class Violation {
         this.order = order;
         this.property = property;
         this.description = description;
+    }
+
+    public Violation() {
     }
 
     public int getOrder() {

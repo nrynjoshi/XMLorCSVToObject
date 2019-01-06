@@ -1,5 +1,8 @@
 package com.demo.induction.tp;
 
+import com.demo.induction.tp.model.Transaction;
+import com.demo.induction.tp.model.Violation;
+import com.demo.induction.tp.services.XMLTransactionProcessor;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,5 +1,7 @@
-package com.demo.induction.tp;
+package com.demo.induction.tp.utils;
 
+import com.demo.induction.tp.model.Transaction;
+import com.demo.induction.tp.model.Violation;
 import org.apache.commons.lang3.StringUtils;
 
 import java.math.BigDecimal;

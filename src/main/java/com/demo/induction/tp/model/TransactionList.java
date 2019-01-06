@@ -1,4 +1,4 @@
-package com.demo.induction.tp;
+package com.demo.induction.tp.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -12,6 +12,8 @@ public class TransactionList {
     public Collection<Transaction> getTransaction() {
         return Transaction;
     }
+
+
 
     @XmlElement(name = "Transaction")
     public void setTransaction(Collection<Transaction> Transaction) {

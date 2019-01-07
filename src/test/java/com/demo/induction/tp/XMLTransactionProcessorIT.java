@@ -20,14 +20,13 @@ import static org.hamcrest.CoreMatchers.hasItem;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
-import static org.junit.Assert.*;
-
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = TransactionProcessorApplication.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = TransactionProcessorApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class XMLTransactionProcessorIT {
 
     @LocalServerPort
     private int port;
+
     @Test
     public void transactionTest()
             throws Exception {
@@ -58,6 +57,6 @@ public class XMLTransactionProcessorIT {
     }
 
     private String createURLWithPort(String uri) {
-        return "http://localhost:"+port + uri;
+        return "http://localhost:" + port + uri;
     }
 }
